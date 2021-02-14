@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <div>{{ item.title }}</div>
+    <div>{{ item.description }}</div>
+    <div>
+        {{ item.address }}
+        <div>{{ item.zipcode }}</div>
+    </div>
+    <div>${{ item.price|floatformat:2 }}</div>
+</div>
+{% endblock %}
